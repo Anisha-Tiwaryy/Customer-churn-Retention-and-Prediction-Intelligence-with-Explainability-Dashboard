@@ -2,10 +2,11 @@
 
 Python · XGBoost · SHAP · SMOTE · SciPy · SQL · Power BI · Streamlit
 
+Live demo: https://4kdmhx7zgw2gvxdvheyswm.streamlit.app/
+
 Telecom companies lose significant revenue to churn every month, and most of it is preventable. This project builds a full churn prediction pipeline on 7,043 customer records — from raw data with quality issues all the way to a deployed dashboard with live prediction and a weekly automated report.
 
 The focus throughout is on business utility, not just model accuracy. Every prediction comes with a SHAP explanation, every insight is framed as a retention action, and the output is packaged for a non-technical stakeholder.
-
 ---
 
 ## Power BI Dashboard
