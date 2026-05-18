@@ -30,7 +30,7 @@ The Streamlit app brings all of this together in one place. The automated report
 ---
 
 ## Project structure
----├── data_prep.py           — data generation, quality validation, cleaning, SMOTE
+├── data_prep.py           — data generation, quality validation, cleaning, SMOTE
 ├── model.py               — LR vs RF vs XGBoost training, SHAP, model saving
 ├── app.py                 — Streamlit dashboard (7 tabs)
 ├── report_generator.py    — automated Jinja2 HTML weekly report

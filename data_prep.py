@@ -89,6 +89,7 @@ def generate_telco_data(n=7043, seed=42):
     # Type inconsistencies: inject strings into numeric cols (~80)
     for col in ["SeniorCitizen"]:
         idx = np.random.choice(df.index, 80, replace=False)
+        df[col] = df[col].astype(object)
         df.loc[idx, col] = "unknown"
 
     df = df.sample(frac=1, random_state=seed).reset_index(drop=True)
@@ -126,7 +127,6 @@ def validate_data(df: pd.DataFrame) -> dict:
     print(f"  Missing values  : {report['missing_total']}")
     print(f"  Duplicate rows  : {report['duplicate_rows']}")
     print(f"  Type issues     : {report['type_issues_total']}")
-    print(f"  ─────────────────────────────")
     print(f"  Total issues    : {report['total_issues']}")
     return report
 
